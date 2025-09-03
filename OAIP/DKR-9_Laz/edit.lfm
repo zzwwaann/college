@@ -1,0 +1,137 @@
+object fEdit: TfEdit
+  Left = 719
+  Height = 300
+  Top = 322
+  Width = 400
+  BorderStyle = bsDialog
+  Caption = 'Редактор танка'
+  ClientHeight = 300
+  ClientWidth = 400
+  Position = poMainFormCenter
+  LCLVersion = '4.0.0.4'
+  OnShow = FormShow
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 8
+    Width = 85
+    Caption = 'Название танка'
+  end
+  object eName: TEdit
+    Left = 8
+    Height = 23
+    Top = 24
+    Width = 380
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 15
+    Top = 56
+    Width = 35
+    Caption = 'Нация'
+  end
+  object eNation: TComboBox
+    Left = 8
+    Height = 23
+    Top = 72
+    Width = 380
+    ItemHeight = 15
+    Items.Strings = (
+      'США'
+      'Германия'
+      'СССР'
+      'Британия'
+      'Япония'
+      'Китай'
+      'Италия'
+      'Франция'
+      'Швеция'
+      'Израиль'
+    )
+    TabOrder = 1
+  end
+  object Label3: TLabel
+    Left = 9
+    Height = 15
+    Top = 104
+    Width = 148
+    Caption = 'Цена в серебрянных львах'
+  end
+  object ePrice: TEdit
+    Left = 9
+    Height = 23
+    Top = 120
+    Width = 380
+    TabOrder = 2
+  end
+  object Label4: TLabel
+    Left = 9
+    Height = 15
+    Top = 152
+    Width = 87
+    Caption = 'Боевой рейтинг'
+  end
+  object bSave: TBitBtn
+    Left = 24
+    Height = 30
+    Top = 256
+    Width = 150
+    Caption = ' Сохранить'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 3
+  end
+  object bCancel: TBitBtn
+    Left = 216
+    Height = 30
+    Top = 256
+    Width = 150
+    Cancel = True
+    Caption = 'Не сохранять'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 4
+  end
+  object eBR: TComboBox
+    Left = 9
+    Height = 23
+    Top = 168
+    Width = 380
+    ItemHeight = 15
+    Items.Strings = (
+      '1'
+      '2'
+      '3'
+      '4'
+      '5'
+      '6'
+      '7'
+      '8'
+    )
+    TabOrder = 5
+    OnChange = eBRChange
+  end
+  object Label5: TLabel
+    Left = 9
+    Height = 15
+    Top = 200
+    Width = 42
+    Caption = 'Экипаж'
+  end
+  object ePeople: TEdit
+    Left = 9
+    Height = 23
+    Top = 216
+    Width = 330
+    TabOrder = 6
+  end
+  object Label6: TLabel
+    Left = 344
+    Height = 15
+    Top = 224
+    Width = 45
+    Caption = 'человек'
+  end
+end

@@ -1,0 +1,79 @@
+object Form1: TForm1
+  Left = 902
+  Height = 303
+  Top = 266
+  Width = 339
+  BorderStyle = bsDialog
+  Caption = 'Калькулятор площади фигур'
+  ClientHeight = 303
+  ClientWidth = 339
+  LCLVersion = '4.0.0.4'
+  OnCreate = FormCreate
+  object cmbShape: TComboBox
+    Left = 56
+    Height = 23
+    Top = 72
+    Width = 231
+    ItemHeight = 15
+    TabOrder = 0
+    OnChange = cmbShapeChange
+  end
+  object edtParam1: TEdit
+    Left = 56
+    Height = 23
+    Top = 120
+    Width = 112
+    TabOrder = 1
+  end
+  object edtParam2: TEdit
+    Left = 184
+    Height = 23
+    Top = 120
+    Width = 103
+    TabOrder = 2
+  end
+  object edtResult: TEdit
+    Left = 56
+    Height = 23
+    Top = 168
+    Width = 231
+    TabOrder = 3
+  end
+  object btnCalculate: TButton
+    Left = 56
+    Height = 25
+    Top = 200
+    Width = 231
+    Caption = 'Вычислить'
+    TabOrder = 4
+    OnClick = btnCalculateClick
+  end
+  object lblParam1: TLabel
+    Left = 56
+    Height = 15
+    Top = 104
+    Width = 67
+    Caption = 'Параметр 1:'
+  end
+  object lblParam2: TLabel
+    Left = 184
+    Height = 15
+    Top = 104
+    Width = 67
+    Caption = 'Параметр 2:'
+  end
+  object Label1: TLabel
+    Left = 144
+    Height = 15
+    Top = 48
+    Width = 43
+    Caption = 'Фигура:'
+  end
+  object Label2: TLabel
+    Left = 56
+    Height = 15
+    Top = 152
+    Width = 34
+    Caption = 'Ответ:'
+  end
+end

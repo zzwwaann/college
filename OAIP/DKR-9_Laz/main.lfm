@@ -1,0 +1,82 @@
+object fMain: TfMain
+  Left = 678
+  Height = 500
+  Top = 256
+  Width = 875
+  BorderStyle = bsDialog
+  Caption = 'Танки'
+  ClientHeight = 500
+  ClientWidth = 875
+  DesignTimePPI = 120
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '3.8.0.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 34
+    Top = 0
+    Width = 875
+    Align = alTop
+    ClientHeight = 34
+    ClientWidth = 875
+    TabOrder = 0
+    object dAdd: TSpeedButton
+      Left = 2
+      Height = 28
+      Top = 2
+      Width = 150
+      Caption = 'Добавить'
+      OnClick = bAddClick
+    end
+    object bEdit: TSpeedButton
+      Left = 152
+      Height = 28
+      Top = 2
+      Width = 150
+      Caption = 'Редактировать'
+      OnClick = bEditClick
+    end
+    object bDel: TSpeedButton
+      Left = 302
+      Height = 28
+      Top = 2
+      Width = 150
+      Caption = 'Удалить'
+      OnClick = bDelClick
+    end
+    object bSort: TSpeedButton
+      Left = 452
+      Height = 28
+      Top = 2
+      Width = 150
+      Caption = 'Сортировать'
+      OnClick = bSortClick
+    end
+    object cbSort: TComboBox
+      Left = 602
+      Height = 28
+      Top = 2
+      Width = 200
+      ItemHeight = 20
+      Items.Strings = (
+        'по Названию'
+        'по Нации'
+        'по Цене'
+        'по Боевому рейтингу'
+        'по Премиуму'
+      )
+      TabOrder = 0
+    end
+  end
+  object SG: TStringGrid
+    Left = 0
+    Height = 466
+    Top = 34
+    Width = 875
+    Align = alClient
+    FixedCols = 0
+    RowCount = 1
+    TabOrder = 1
+  end
+end
